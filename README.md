@@ -36,16 +36,16 @@ print(data)
 converter.save_to_excel(from_currency="USD", to_currency=None)
 
 ###  Output:
-1 USD data1.xlsx saved succcessfully!
+1 USD data.xlsx saved succcessfully!
 
 ###  Save the exchange rate data to a CSV file.
 converter.save_to_csv(from_currency=None, to_currency="EUR")
 
 ###  Output:
- 1 USD data1.csv saved succcessfully!
+ 1 USD data.csv saved succcessfully!
 
 ###  Save the exchange rate data to a JSON file.
 converter.save_to_json(from_currency="EUR", to_currency=None)
 
 ###  Output:
- 1 USD data1.csv saved succcessfully!
+ 1 USD data.json saved succcessfully!
