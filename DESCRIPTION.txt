@@ -1,0 +1,53 @@
+
+Xchanger
+========
+
+A Python module that scrapes data from https://www.xe.com/ and returns exchange rates for different currencies.
+Use it to get the latest exchange rates for any currency pair.
+
+The code is compatible with both Python 2 and Python 3.
+
+Installation:
+============
+
+::
+
+    pip install Xchanger
+
+Example
+=======
+
+.. code:: python
+
+    # Importing module
+    from fx.Xchanger import Xchanger
+
+    # Create a Xchanger object.
+    converter = Xchanger()
+
+    # Get the data of the specified currencies.
+    data = converter.get(from_currency="USD", to_currency="EUR")
+
+    # print the data
+    print(data)
+
+    # Output:
+    #> 1 USD = 0.92374341 EUR
+
+    # Save the exchange rate data to an Excel spreadsheet.
+    converter.save_to_excel(from_currency="USD", to_currency=None)
+
+    #> Output:
+    # 1 USD data1.xlsx saved succcessfully!
+
+    # Save the exchange rate data to a CSV file.
+    converter.save_to_csv(from_currency=None, to_currency="EUR")
+
+    #> Output:
+    # 1 USD data1.csv saved succcessfully!
+
+    # Save the exchange rate data to a JSON file.
+    converter.save_to_json(from_currency="EUR", to_currency=None)
+
+    #> Output:
+    # 1 USD data1.csv saved succcessfully!
