@@ -30,7 +30,7 @@ setup(
     long_description=long_description,
     author='Maaz Ali',
     author_email='devlprkhan04@gmail.com',
-    url='',
+    url='https://github.com/MaazAli04/XC',
     packages=['fx'],
     classifiers=CLASSIFIERS,
     install_requires=REQUIREMENTS,
