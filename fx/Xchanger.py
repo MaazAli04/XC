@@ -6,7 +6,7 @@ import requests
 import requests_cache
 from bs4 import BeautifulSoup
 import pandas as pd
-from XC.fx.erros import XchangerException
+from fx.erros import XchangerException
 import os
 import tqdm
 from termcolor import colored
